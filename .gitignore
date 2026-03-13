@@ -1,0 +1,11 @@
+# Klipper auto-backups
+printer-*.cfg
+*.bak
+
+# Editor temp files
+*~
+*.swp
+
+# System files
+.moonraker.uuid
+.theme/
