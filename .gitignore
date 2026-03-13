@@ -1,0 +1,25 @@
+# Klipper auto-backups
+config/printer-*.cfg
+config/*.bak
+config/*.stow
+config/.*
+
+# Editor temp files
+*~
+*.swp
+
+# System files
+.moonraker.uuid
+*.log
+*.db
+*.json
+
+backup/
+comms/
+database/
+gcodes/
+logs/
+misc/
+systemd/
+moonraker.asvc
+*.zip
