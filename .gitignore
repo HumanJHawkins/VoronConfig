@@ -1,11 +1,20 @@
-# Klipper auto-backups
-printer-*.cfg
-*.bak
+# Ignore everything by default
+*
 
-# Editor temp files
-*~
-*.swp
+# Allow the main folders and scripts
+!config/
+!autocommit.sh
+!listen_and_sync.sh
+!.gitignore
 
-# System files
+# Ignore Klipper's auto-generated junk inside the config folder
+config/printer-*.cfg
+config/*.bak
+config/*.stow
+config/.*
+
+# Ignore specific system files that might be in printer_data
 .moonraker.uuid
-.theme/
+*.log
+*.db
+*.json
